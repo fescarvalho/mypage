@@ -24,6 +24,7 @@ body {
     width: 100%;
     overflow-x: hidden;
  
+ 
 }
 
 .center {
@@ -158,9 +159,10 @@ body {
 .about{
     width: 100%;
     padding: 8em 0;
-    justify-content: space-evenly;
+    justify-content: space-around;
     flex-wrap: wrap;
     align-items: start;
+   
 }
 
 .about .box_wrap {
@@ -194,18 +196,21 @@ body {
 
 }
 
+
+
 .skills_box i{
     margin-right: 0.5em;
-    margin-bottom: 0.5em;
+    margin-bottom: 0.5em; 
     color: var(--sec-font-color);
    
 }
+
 
 /* EDUCATION */
 
 .education {
     width: 100%;
-    background: #151618;
+    background: #121314;
     padding: 5em 0 ;
     justify-content: space-evenly;
     flex-wrap: wrap;
