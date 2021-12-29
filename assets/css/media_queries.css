@@ -92,8 +92,9 @@
      
      @media (max-width: 483px) {
        .skills_box{
-       margin-right: 0;
-       width: 25em;
+        display: flex;
+       margin-right: -10px;
+       width: 23em;
        }
     
     } 
