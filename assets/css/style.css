@@ -428,4 +428,5 @@ body {
 
 .social-media i:hover {
   color: #f9813a;
+  transform: rotate(360deg);
 }
