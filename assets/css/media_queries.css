@@ -63,8 +63,13 @@
     height: 5px;
     background: var(--main-color);
   }
-  .education .left_box {
-    margin-left: 14rem;
+
+  .education .right_box {
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }
+  .education .right_box img {
+    margin-top: 20px;
   }
 }
 
@@ -79,10 +84,7 @@
   }
 
   .education .left_box {
-    margin-left: 14rem;
-  }
-  .education .left_box {
-    margin-left: 14rem;
+    margin-left: 2rem;
   }
 }
 
@@ -90,17 +92,13 @@
   .main img {
     width: 22em;
   }
-  .education .left_box {
-    margin-left: 4rem;
-  }
-}
 
-@media (max-width: 483px) {
-  /*  .skills_box{
-        display: flex;
-       margin-right: -10px;
-       width: 23em;
-       } */
+  .education .right_box img {
+    opacity: 0.5;
+    width: 100%;
+    margin: 10px auto;
+    transition: all 0.3s;
+  }
 }
 
 @media (max-width: 435px) {
@@ -111,9 +109,6 @@
     height: 450px;
   }
 
-  .education .left_box {
-    margin-left: 3rem;
-  }
   .main-img img {
     width: 25em;
     top: 30px;

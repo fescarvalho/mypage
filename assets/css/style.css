@@ -209,11 +209,19 @@ body {
 }
 
 .education .left_box {
-  width: 20%;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin: 20px 0;
+  flex-wrap: wrap;
 }
 
 .education .left_box .container {
-  margin: 2em 0;
+  margin: 2em;
+  opacity: 0.5;
+}
+.education .left_box .container:hover {
+  opacity: 1;
 }
 
 .education .heading {
@@ -235,6 +243,12 @@ body {
   height: 100%;
   background: var(--main-color);
   left: -15px;
+  transform: translateY(8px);
+  transition: transform 0.4s;
+}
+
+.left_box .container:hover::before {
+  transform: translateY(0px);
 }
 
 .education :is(small, p) {
@@ -243,11 +257,21 @@ body {
 }
 
 .education .right_box {
-  width: 40%;
+  display: flex;
+
+  width: 30%;
+  justify-content: center;
+  margin: 0 auto;
 }
 
 .education .right_box img {
-  width: 100%;
+  opacity: 0.5;
+  width: 80%;
+  margin-right: 50px;
+  transition: all 0.3s;
+}
+.education .right_box img:hover {
+  opacity: 1;
 }
 
 /* experience */
