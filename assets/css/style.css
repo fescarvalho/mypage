@@ -28,6 +28,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0 auto;
 }
 
 .nav {
@@ -320,7 +321,7 @@ body {
 /* Projetos */
 .projects {
   width: 100%;
-  padding: 5em 0;
+  padding: 2em 0;
   background: #151618;
   flex-direction: column;
 }
@@ -329,7 +330,7 @@ body {
   font-size: 3em;
 }
 .projects .container {
-  width: 80%;
+  width: 100%;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -338,8 +339,22 @@ body {
 .projects .container a {
   text-decoration: none;
   color: white;
+  height: 200px;
+  width: 200px;
   margin: 2em 0.8em 0 0;
+  background: #2b2d334f;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.3);
   position: relative;
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+}
+.projects .container a .projectTiltle {
+  text-align: center;
+  width: 100%;
+  align-content: center;
+  padding: 2em;
+  background: rgba(2555, 255, 255, 0.034);
 }
 
 .projects .container a::before {
@@ -351,7 +366,7 @@ body {
   height: 100%;
   font-family: "Font Awesome 5 free";
   font-weight: 700;
-  background: #f9803ae1;
+  background: var(--main-color);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -359,12 +374,9 @@ body {
   clip-path: circle(0% at 50% 50%);
   transition: clip-path 0.4s;
 }
+
 .projects .container a:hover::before {
   clip-path: circle(70.7% at 50% 50%);
-}
-.projects .container a div {
-  padding: 2em;
-  background: rgba(2555, 255, 255, 0.034);
 }
 
 /* CONTACT */
