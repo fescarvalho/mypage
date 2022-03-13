@@ -21,7 +21,7 @@
     top: 80px;
   }
   .main {
-    align-items: flex-end;
+    align-items: center;
   }
   .checkBtn {
     display: block;
@@ -107,6 +107,20 @@
     width: 100%;
     margin: 10px auto;
     transition: all 0.3s;
+  }
+
+  .topo .desktop {
+    display: none;
+  }
+  .topo .desktopmobile {
+    display: block;
+    font-size: 1.3rem;
+    padding: 5px;
+  }
+  .topo a:hover {
+    color: #f9813a;
+    border: 2px solid var(--main-color);
+    transition: 0.3s;
   }
 }
 
@@ -213,9 +227,15 @@
   .about .box_wrap .heading {
     min-width: max-content;
   }
+  .about .box_wrap i {
+    font-size: 2rem;
+    margin-top: 10px;
+  }
 
   .skills_box {
-    font-size: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
   }
   .social-media .skills_box {
     text-align: center;
@@ -224,7 +244,7 @@
 
 @media (max-width: 374px) {
   .experience {
-    margin-left: 2.2rem;
+    margin: 0 auto;
     width: 20em;
   }
   .social-media .skills_box a {

@@ -55,3 +55,19 @@ function scrollAnimate() {
   }
 }
 scrollAnimate();
+
+function backtotop() {
+  const section = document.querySelector("#Education");
+  const sectionTop = document.querySelector(".topo");
+
+  function backToTop() {
+    const btnTop = section.getBoundingClientRect().top;
+    if (btnTop < 100) {
+      sectionTop.classList.add("ativo");
+    } else {
+      sectionTop.classList.remove("ativo");
+    }
+  }
+  window.addEventListener("scroll", backToTop);
+}
+backtotop();

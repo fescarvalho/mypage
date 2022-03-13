@@ -38,12 +38,18 @@ body {
   justify-content: space-between;
 }
 
+.nav .center {
+  margin: 0;
+}
+
 .checkBtn {
   display: none;
 }
 
 .nav .logo {
-  font-size: 2em;
+  color: var(--sec-font-color);
+  text-decoration: none;
+  font-size: 1.5em;
 }
 
 .nav ol {
@@ -51,20 +57,41 @@ body {
 }
 
 .nav ol a {
+  position: relative;
   text-decoration: none;
   color: var(--sec-font-color);
   margin: 0.3em;
-  padding: 0.5em 1.5em;
+  padding: 0.2em;
+  margin-left: 30px;
   border-radius: 10px;
+  display: flex;
+  justify-content: center;
+}
+.nav ol a::after {
+  top: 35px;
+  content: "";
+  width: 0;
+  height: 2px;
+  display: block;
+  position: absolute;
+  background: var(--main-color);
+}
+.nav ol a:hover::after {
+  top: 35px;
+  content: "";
+  width: 100%;
+  height: 2px;
+  display: block;
+  position: absolute;
+  background: var(--main-color);
+
+  transition: 0.3s;
 }
 
 .nav ol a:hover {
-  transition: background 0.8s;
-  background: var(--main-color);
-  color: var(--bg);
+  color: var(--main-color);
 }
-
-.back-to-top {
+*/ .back-to-top {
   text-decoration: none;
   position: fixed;
   padding-bottom: 0.1rem;
@@ -126,20 +153,23 @@ body {
 }
 
 .box .btn {
-  font-size: 1.2em;
+  font-size: 0.875em;
+  font-family: "Montserrat";
+  text-transform: uppercase;
   background: none;
   color: var(--main-color);
   border: none;
   cursor: pointer;
   border: 1px solid var(--main-color);
-  width: 7em;
-  height: 2.2em;
+  padding: 0.5rem 1rem;
   transition: all 0.3s;
 }
 
 .box .btn:hover {
   background: var(--main-color);
   color: var(--bg);
+
+  font-weight: bold;
 }
 
 .main img {
@@ -181,6 +211,13 @@ body {
   background: var(--main-color);
   z-index: -1;
 }
+.about .box_wrap .text {
+  font-size: 1rem;
+}
+.about .box_wrap i {
+  font-size: 2.5rem;
+  margin-top: 10px;
+}
 
 .about .box_wrap .text,
 .about .box_wrap i {
@@ -194,8 +231,7 @@ body {
   text-align: center;
 }
 .skills_box i {
-  margin-right: 0.5em;
-  margin-bottom: 0.5em;
+  margin-right: 30px;
   color: var(--sec-font-color);
 }
 
@@ -302,7 +338,7 @@ body {
   height: 100%;
   background: var(--main-color);
   top: 0;
-  left: -20px;
+  left: -10px;
   transform: translateY(8px);
   transition: transform 0.4s;
 }
@@ -351,6 +387,7 @@ body {
 }
 
 .projects .container a .projectTiltle {
+  font-family: "Montserrat";
   text-align: center;
   display: flex;
   justify-content: center;
@@ -446,4 +483,39 @@ body {
 .social-media i:hover {
   color: #f9813a;
   transform: rotate(360deg);
+}
+
+.topo {
+  display: none;
+  position: fixed;
+  justify-content: flex-end;
+  bottom: 20px;
+  right: 0;
+}
+.topo.ativo {
+  display: block;
+  bottom: 65px;
+}
+.topo a {
+  padding: 5px;
+  color: var(--sec-font-color);
+  text-decoration: none;
+  border: 2px solid var(--sec-font-color);
+  font-size: 0.875rem;
+  border-radius: 4px;
+  margin-right: 20px;
+  padding: 0.5rem;
+}
+
+.topo a:hover {
+  color: #f9813a;
+  border: 2px solid var(--main-color);
+  transition: 0.3s;
+}
+
+.topo .desktop {
+  display: block;
+}
+.topo .desktopmobile {
+  display: none;
 }

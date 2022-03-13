@@ -10,12 +10,17 @@
     <link rel="stylesheet" href="./assets/css/flip.css">
     <link rel="stylesheet" href="./assets/css/media_queries.css">
     <link href="./assets/fontawesome/css/all.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <title>Fernando Carvalho</title>
 </head>
 
 <body>
     <header class="nav center">
-        <p class="logo" id="logo">F.C.</p>
+        <a class="logo" href="#logo">
+            <p class="logo" id="logo">F.C.</p>
+        </a>
         <input type="checkbox" name="" class="checkBtn" id="checkbox">
         <ol class="center" onclick="getElementById('checkbox').checked = false;">
             <a href="#About">
@@ -119,6 +124,7 @@
                         <div class="flip">
                             <span class="projectTiltle">Orçamento</span>
                             <div class="img2">
+
                                 <img src="./assets/img/Group1.png">
                             </div>
                         </div>
@@ -240,9 +246,12 @@
         </div>
     </div>
 
-    <a class="back-to-top" href="#logo"> ➜ </a>
 </body>
+<div class="topo">
+    <a class="desktop" href="#logo"> Back to top </a>
+    <a class="desktopmobile" href="#logo"> 🠕 </a>
 
+</div>
 <footer id="footer" class="footer center">
     <p> <a rel="nofollow" target="_blank" href="http://beacons.ai/fescarvalho">Desenvolvido por Fernando Carvalho</a> </p>
 
