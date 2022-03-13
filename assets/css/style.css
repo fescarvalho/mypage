@@ -219,9 +219,6 @@ body {
 
 .education .left_box .container {
   margin: 2em;
-  opacity: 0.5;
-}
-.education .left_box .container:hover {
   opacity: 1;
 }
 
@@ -320,6 +317,7 @@ body {
 
 /* Projetos */
 .projects {
+  text-decoration: none;
   width: 100%;
   padding: 2em 0;
   background: #151618;
@@ -330,56 +328,39 @@ body {
   font-size: 3em;
 }
 .projects .container {
-  width: 100%;
+  width: 90%;
   display: flex;
+  align-items: center;
   justify-content: center;
   flex-wrap: wrap;
 }
 
+.flipper .flip span {
+  color: var(--main-color);
+  height: 90%;
+  width: 90%;
+  font-size: 1.2rem;
+}
 .projects .container a {
-  text-decoration: none;
   color: white;
   height: 200px;
   width: 200px;
   margin: 2em 0.8em 0 0;
-  background: #2b2d334f;
-  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.3);
   position: relative;
   display: flex;
-  align-items: center;
-  border-radius: 4px;
-}
-.projects .container a .projectTiltle {
-  text-align: center;
-  width: 100%;
-  align-content: center;
-  padding: 2em;
-  background: rgba(2555, 255, 255, 0.034);
 }
 
-.projects .container a::before {
-  content: "➤";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  font-family: "Font Awesome 5 free";
-  font-weight: 700;
-  background: var(--main-color);
+.projects .container a .projectTiltle {
+  text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 2em;
-  clip-path: circle(0% at 50% 50%);
-  transition: clip-path 0.4s;
+  width: 100%;
+  height: 100%;
+  padding: 2em;
+  background: rgba(2555, 255, 255, 0.04);
+  box-shadow: 2px 2px 10px rgb(0, 0, 0);
 }
-
-.projects .container a:hover::before {
-  clip-path: circle(70.7% at 50% 50%);
-}
-
-/* CONTACT */
 
 .contact {
   width: 100%;
@@ -436,7 +417,7 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
-  /*  left: 0px; */
+
   height: 3rem;
   background-color: #151618;
 }
