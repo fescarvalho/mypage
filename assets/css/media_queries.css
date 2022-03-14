@@ -43,7 +43,30 @@
   .checkBtn:checked::before {
     content: "×";
   }
+  .nav ol a {
+    margin-bottom: 10px;
+  }
+  .nav ol a:hover::after {
+    content: "";
+    margin-top: -10px;
+    width: 100%;
+    height: 2px;
+    display: block;
+    position: absolute;
+    background: var(--main-color);
 
+    transition: 0.3s;
+  }
+  .nav ol a::after {
+    top: 35px;
+    margin-top: -10px;
+    content: "";
+    width: 0;
+    height: 2px;
+    display: block;
+    position: absolute;
+    background: var(--main-color);
+  }
   .nav ol {
     position: absolute;
     width: 100%;
@@ -114,7 +137,7 @@
   }
   .topo .desktopmobile {
     display: block;
-    font-size: 1.3rem;
+    font-size: 0.875rem;
     padding: 5px;
   }
   .topo a:hover {
