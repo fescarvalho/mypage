@@ -187,7 +187,7 @@
     text-align: center;
     width: 100%;
     align-content: center;
-    padding: 1em 0;
+    padding: 1em;
     background: rgba(2555, 255, 255, 0.034);
   }
   .education .right_box:nth-last-child(2) {
@@ -222,7 +222,7 @@
   }
 
   .projects .container a {
-    margin: 10px 70px;
+    margin: 10px 30px;
   }
 
   .education .controls {
