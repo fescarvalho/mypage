@@ -543,15 +543,9 @@ body {
 
 .social-media a {
   font-size: 1rem;
-  padding-left: 2rem;
+ padding-left: 30px;
 }
 
-.social-media p {
-  margin-top: -20px;
-  margin-left: -85px;
-  z-index: -1;
-
-}
 
 .social-media i {
   transition: all 0.2s;

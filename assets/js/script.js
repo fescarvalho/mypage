@@ -38,7 +38,7 @@ function scrollAnimate() {
   const sections = document.querySelectorAll(".js-scroll");
   if (sections.length) {
     function scrollAnimation() {
-      const windowSize = window.innerHeight * 0.6;
+      const windowSize = window.innerHeight * 0.8;
       sections.forEach((section) => {
         const sectionTop = section.getBoundingClientRect().top;
         const sectionActive = sectionTop - windowSize < 0;
