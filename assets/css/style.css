@@ -422,17 +422,26 @@ body {
   margin: 5px 0;
   font-size: 1.5rem;
 }
+.flipper .flip .img2 i {
+  position: absolute;
+  z-index: 900;
+  margin-top: 10px;
+}
+.flipper .flip .img2 i:hover {
+  color: #121314;
+}
 
 .flipper .flip .img2 p {
   display: block;
   position: relative;
-  margin-top: 15px;
+  margin-top: 10px;
   color: #ccc;
   font-family: "Montserrat";
   font-size: 0.875rem;
   padding: 0;
   align-items: center;
 }
+
 .flipper .flip .img2 p:hover {
   font-weight: bold;
 }
@@ -454,6 +463,9 @@ body {
 }
 .flipper .flip .img2 p::before {
   margin-left: -20px;
+}
+.flipper .flip .img2::before {
+  content: "";
 }
 
 .contact {
@@ -526,17 +538,24 @@ body {
 
 .social-media {
   margin-top: 2rem;
+  display: flex;
 }
 
 .social-media a {
   font-size: 1rem;
-  padding-left: 1.5rem;
+  padding-left: 2rem;
+}
+
+.social-media p {
+  margin-top: -20px;
+  margin-left: -85px;
+  z-index: -1;
+
 }
 
 .social-media i {
   transition: all 0.2s;
 }
-
 .social-media i:hover {
   color: #f9813a;
   transform: rotate(360deg);
@@ -576,3 +595,4 @@ body {
 .topo .desktopmobile {
   display: none;
 }
+
